@@ -48,7 +48,7 @@ The **DnD Character Management Tool** is a proposed web-based application design
 
 ## Team Roles
 - **Patrick (Front-End Developer)**: Responsible for designing and implementing the user interface using HTML and CSS. Patrick will focus on creating an intuitive and visually appealing interface that aligns with the needs of DnD players.
-- **Daniel (Back-End Developer)**: Focuses on developing the core backend functionalities using Python. Daniel will implement modules such as character creation, stat tracking, and data management, and will integrate the database with the backend.
+- **Daniel (Back-End Developer)**: Focuses on developing the core backend functionalities using Python. Daniel will implement modules such as character creation, stat tracking, and will integrate the database with the backend.
 - **Carolyn (Team Lead & Back-End Developer)**: Oversees the entire project, ensuring that deadlines are met and the project stays on track. Carolyn will also contribute to backend development, particularly for complex features like inventory management and save/load functionality, and will handle integration between the frontend and backend, as well as database management.
 
 ## Risk Management
