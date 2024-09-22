@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link
+				href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+				rel="stylesheet"
+				integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+				crossorigin="anonymous"
+			/>
+		<link rel="stylesheet" href="assets/style.css" />
+		<title>Document</title>
+	</head>
+
+	<body class="background">
+		<header class="magic p-3">
+			<div class="container">
+				<h1 class="text-light text-center">Character Maker</h1>
+			</div>
+		</header>
+
+		<!-- account creation / sign in -->
+		<section id="createSign">
+			<div class="container w-50">
+				<div class="row align-items-center">
+					<a href="#" class="col liteMagic border text-center m-3 p-3">
+						<div
+							class="fs-1"
+							data-bs-toggle="modal"
+							data-bs-target="#create"
+						>
+							Create Account
+						</div>
+					</a>
+
+					<a href="#" class="col liteMagic border m-3 text-center p-3">
+						<div
+							class="fs-1"
+							data-bs-toggle="modal"
+							data-bs-target="#signIn"
+						>
+							Sign In
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Character Creation without account -->
+		<section id="noAccCreate">
+			<div class="container w-25">
+				<div class="row align-items-center">
+					<a href="#" class="bg-success text-dark border m-3 text-center p-3">
+						<div class="fs-3">Get Started!</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Showcase -->
+		<section id="hype">
+			<div class="container p-5 w-75 text-center fs-4 seeThrough">
+				<h2 class="h1">Hype Section</h2>
+				<p class="lead">This section is the hype section and explanation of creating an account vs no account.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis provident quaerat id? Delectus fuga adipisci voluptate ratione mollitia iste sed cupiditate soluta nobis itaque autem, temporibus voluptas voluptatem iure. Aspernatur itaque praesentium eum facere expedita soluta nam voluptatibus magnam reprehenderit tempora. Modi laboriosam dignissimos a aliquid non laborum consectetur esse.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis provident quaerat id? Delectus fuga adipisci voluptate ratione mollitia iste sed cupiditate soluta nobis itaque autem, temporibus voluptas voluptatem iure. Aspernatur itaque praesentium eum facere expedita soluta nam voluptatibus magnam reprehenderit tempora. Modi laboriosam dignissimos a aliquid non laborum consectetur esse.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis provident quaerat id? Delectus fuga adipisci voluptate ratione mollitia iste sed cupiditate soluta nobis itaque autem, temporibus voluptas voluptatem iure. Aspernatur itaque praesentium eum facere expedita soluta nam voluptatibus magnam reprehenderit tempora. Modi laboriosam dignissimos a aliquid non laborum consectetur esse.</p>
+			</div>
+		</section>
+		
+
+		<!-- <footer class="magic">
+			<p>
+				created by Daniel, Carolyn, and Patrick <br>
+				<a href="https://www.freepik.com/free-vector/set-three-mythology-creatures_25590555.htm#query=dungeons%20and%20dragons&position=0&from_view=keyword&track=ais_hybrid&uuid=9697696c-fa0e-4cdc-bcff-68ce89ea9d17">Image by gstudioimagen1</a> on Freepik
+			</p>
+			
+		</footer> -->
+
+
+		<!-- Create Account Modal -->
+		<div
+			class="modal fade"
+			id="create"
+			tabindex="-1"
+			aria-labelledby="createLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h5 class="modal-title" id="createLabel">Create Account</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+
+					<div class="modal-body">
+						<form>
+							<div class="mb-3">
+								<label for="name" class="col-form-label">
+									Name:
+								</label>
+								<input type="text" class="form-control" id="name">
+							</div>
+
+							<div class="mb-3">
+								<label for="user-name" class="col-form-label">
+									User Name:
+								</label>
+								<input type="text" class="form-control" id="user-name">
+							</div>
+
+							<div class="mb-3">
+								<label for="password" class="col-form-label">
+									Password:
+								</label>
+								<input type="text" class="form-control" id="password">
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sign In Modal -->
+		<div
+			class="modal fade"
+			id="signIn"
+			tabindex="-1"
+			aria-labelledby="signInLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="signInLabel">Sign In</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="mb-3">
+								<label for="user-name" class="col-form-label">
+									User Name:
+								</label>
+								<input type="text" class="form-control" id="user-name">
+							</div>
+
+							<div class="mb-3">
+								<label for="password" class="col-form-label">
+									Password:
+								</label>
+								<input type="text" class="form-control" id="password">
+							</div>
+
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

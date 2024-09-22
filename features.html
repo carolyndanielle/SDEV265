@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+                rel="stylesheet"
+                integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+                crossorigin="anonymous"
+            />
+            <link rel="stylesheet" href="assets/style.css" />
+        <title>Document</title>
+    </head>
+    <body class="background">
+        <header class="magic p-3">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col"></div>
+					<h1 class="text-light text-center fs-1 col">Character Maker</h1>
+					<div class="col text-end">
+						<a href="#" id="exitCreate" class="btn btn-secondary fs-5">Leave Maker</a>
+						<a href="#" id="signOutBtn" class="btn btn-danger fs-5">Sign Out</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+        <section id="characterName" class="mt-3">
+			<div class="container liteMagic w-25 p-3">
+				<form action="">
+					<label for="charName" class="col-form-label lead fs-5">
+						Character Name:
+					</label>
+					<input type="text" class="form-control" id="charName" />
+				</form>
+			</div>
+		</section>
+
+        <section id="characterChoices" class="mt-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col m-1 bg-light border">
+                        <div class="row text-center p-3">
+                            <div class="col fs-3"><strong>Race:</strong></div>
+                            <div id="raceChoice" class="col fs-3 border border-dark"></div>
+                        </div>
+                    </div>
+
+                    <div class="col m-1 bg-light border">
+                        <div class="row text-center p-3">
+                            <div class="col fs-3"><strong>Class:</strong></div>
+                            <div id="classChoice" class="col fs-3 border border-dark"></div>
+                        </div>
+                    </div>
+
+                    <div class="col m-1 bg-light border">
+                        <div class="row p-1">
+                            <div class="input-group input-group-lg p-2">
+                                <label class="input-group-text" for="inputGroupSelect01"><strong>Starting Level:</strong></label>
+                                <select name="levels" id="inputGroupSelect01" class="form-select">
+                                    <option selected>1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                    <option value="4">5</option>
+                                    <option value="5">6</option>
+                                    <option value="6">7</option>
+                                    <option value="7">8</option>
+                                    <option value="8">9</option>
+                                    <option value="9">10</option>
+                                    <option value="10">11</option>
+                                    <option value="11">12</option>
+                                    <option value="12">13</option>
+                                    <option value="13">14</option>
+                                    <option value="14">15</option>
+                                    <option value="15">16</option>
+                                    <option value="16">17</option>
+                                    <option value="17">18</option>
+                                    <option value="18">19</option>
+                                    <option value="19">20</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col m-1 bg-light border">
+                        <div class="row text-center p-1">
+                            <div class="col fs-3"><strong>Hit Points:</strong></div>
+                            <div class="col border border-dark fs-5 pt-4"></div>
+                            <div class="col fs-5"> + Con Modifier</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featureArea" class="mt-3">
+            <div class="container seeThrough p-3">
+                <h2 class="text-center mb-4 border-bottom border-dark">Features</h2>
+
+                <ul class="nav nav-tabs parchment">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Race Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Class Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Spells</a>
+                    </li>
+                </ul>
+
+                <div id="featureList">
+                    <div class="row m-3 p-2 liteMagic border border-dark text-center fs-3">
+                        <div class="col-2 border-end border-dark">Feature Name</div>
+                        <div class="col-10">Feature Description <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, rerum?</div>
+                    </div>
+                    <div class="row m-3 p-2 liteMagic border border-dark text-center fs-3">
+                        <div class="col-2 border-end border-dark">Feature Name</div>
+                        <div class="col-10">Feature Description <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, rerum?</div>
+                    </div>
+                    <div class="row m-3 p-2 liteMagic border border-dark text-center fs-3">
+                        <div class="col-2 border-end border-dark">Feature Name</div>
+                        <div class="col-10">Feature Description <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, rerum?</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+    </body>
+</html>
