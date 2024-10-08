@@ -40,3 +40,8 @@ footer {
 .parchment {
     background-color: var(--parchment);
 }
+
+.race-img {
+    width: 80px;
+    margin: 2px 0;
+}
