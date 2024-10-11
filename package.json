@@ -1,0 +1,28 @@
+{
+  "name": "sdev265",
+  "version": "1.0.0",
+  "description": "## Project Overview The **DnD Character Management Tool** is a proposed web-based application designed to assist Dungeons & Dragons (DnD) players and Dungeon Masters (DMs) in managing character sheets more effectively. The tool will include essential features such as character creation, stat tracking, inventory management, and save/load functionality. It will be developed using Python for the backend and HTML/CSS for the frontend, and will integrate a database to store and retrieve character information. The application is intended to be accessible on computers, offering a user-friendly interface that enhances the gameplay experience for all users.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolyndanielle/SDEV265.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolyndanielle/SDEV265/issues"
+  },
+  "homepage": "https://github.com/carolyndanielle/SDEV265#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.1",
+    "validator": "^13.12.0"
+  }
+}
