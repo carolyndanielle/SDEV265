@@ -10,76 +10,122 @@
 				crossorigin="anonymous"
 			/>
 		<link rel="stylesheet" href="assets/style.css" />
-		<title>Document</title>
+		<title>Building Character</title>
 	</head>
 
 	<body class="background">
-		<header class="magic p-3">
-			<div class="container">
-				<h1 class="text-light text-center">Character Maker</h1>
-			</div>
-		</header>
-
-		<!-- account creation / sign in -->
-		<section id="createSign">
-			<div class="container w-50">
+		
+		<header>
+			<div class="container magic p-3">
 				<div class="row align-items-center">
-					<a href="#" class="col liteMagic border text-center m-3 p-3">
-						<div
-							class="fs-1"
-							data-bs-toggle="modal"
-							data-bs-target="#create"
-						>
-							Create Account
-						</div>
-					</a>
-
-					<a href="#" class="col liteMagic border m-3 text-center p-3">
-						<div
-							class="fs-1"
+					<!-- Name of app -->
+					<div class="col-7">
+						<h1 class="text-light text-center">Building Character</h1>
+					</div>
+					<div class="col-5 d-grid gap-2 d-md-block">
+						<!-- opens sign-in modal -->
+						<button
+							type="button"
+							class="btn btn-lg liteMagic"
 							data-bs-toggle="modal"
 							data-bs-target="#signIn"
 						>
 							Sign In
-						</div>
-					</a>
-				</div>
-			</div>
-		</section>
+						</button>
 
-		<!-- Character Creation without account -->
-		<section id="noAccCreate">
-			<div class="container w-25">
-				<div class="row align-items-center">
-					<a href="#" class="bg-success text-dark border m-3 text-center p-3">
-						<div class="fs-3">Get Started!</div>
-					</a>
+						<!-- opens create account modal -->
+						<button
+							type="button"
+							class="btn btn-lg liteMagic"
+							data-bs-toggle="modal"
+							data-bs-target="#create"
+						>
+							Create Account
+						</button>
+					</div>
 				</div>
 			</div>
-		</section>
+		</header>
+
 
 		<!-- Showcase -->
-		<section id="hype">
-			<div class="container p-5 w-75 text-center fs-4 seeThrough">
-				<h2 class="h1">Hype Section</h2>
-				<p class="lead">This section is the hype section and explanation of creating an account vs no account.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis provident quaerat id? Delectus fuga adipisci voluptate ratione mollitia iste sed cupiditate soluta nobis itaque autem, temporibus voluptas voluptatem iure. Aspernatur itaque praesentium eum facere expedita soluta nam voluptatibus magnam reprehenderit tempora. Modi laboriosam dignissimos a aliquid non laborum consectetur esse.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis provident quaerat id? Delectus fuga adipisci voluptate ratione mollitia iste sed cupiditate soluta nobis itaque autem, temporibus voluptas voluptatem iure. Aspernatur itaque praesentium eum facere expedita soluta nam voluptatibus magnam reprehenderit tempora. Modi laboriosam dignissimos a aliquid non laborum consectetur esse.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis provident quaerat id? Delectus fuga adipisci voluptate ratione mollitia iste sed cupiditate soluta nobis itaque autem, temporibus voluptas voluptatem iure. Aspernatur itaque praesentium eum facere expedita soluta nam voluptatibus magnam reprehenderit tempora. Modi laboriosam dignissimos a aliquid non laborum consectetur esse.</p>
+		<section class="container mt-3 p-5 w-75 text-center fs-4 seeThrough">
+			<div>
+				<div>
+					<h2 class="h1">Build a D&D Character!</h2>
+					<h3>Creating a D&D character can be overwhelming</h3>
+					<p>With this application, you will be able to create a Dungeons and Dragons character from a list of predetermined options, allowing you to jump in to your next campaign as quickly as possible! This is a work in progress, so please keep looking back for added functionality and customization options.</p></strong>
+					<p>You may use this application to quickly generate a D&D character at any time. However, you will not be able to save any characters unless you create an account and sign in to it.</p></strong>
+				</div>
+
+				<div class="row">
+					<div class="col-4"></div>
+					<a href="#" class="btn btn-success btn-lg w-25">Create Character</a>
+					<div class="col-4"></div>
+				</div>
 			</div>
 		</section>
 		
 
-		<!-- <footer class="magic">
-			<p>
-				created by Daniel, Carolyn, and Patrick <br>
-				<a href="https://www.freepik.com/free-vector/set-three-mythology-creatures_25590555.htm#query=dungeons%20and%20dragons&position=0&from_view=keyword&track=ais_hybrid&uuid=9697696c-fa0e-4cdc-bcff-68ce89ea9d17">Image by gstudioimagen1</a> on Freepik
-			</p>
-			
-		</footer> -->
+		<footer>
+			<div class="container text-center">
+				<p>
+					created by Daniel, Carolyn, and Patrick <br>
+					<a href="https://www.freepik.com/free-vector/set-three-mythology-creatures_25590555.htm#query=dungeons%20and%20dragons&position=0&from_view=keyword&track=ais_hybrid&uuid=9697696c-fa0e-4cdc-bcff-68ce89ea9d17">Image by gstudioimagen1</a> on Freepik
+				</p>
+			</div>
+		</footer>
+
+
+		<!-- Sign In Modal -->
+		<!-- 
+			the sign in button targets this html via the id "signIn"
+			all attributes in these sections are bootstrap specific for styling and javascript behavior
+		-->
+		<div
+			class="modal fade"
+			id="signIn"
+			tabindex="-1"
+			aria-labelledby="signInLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="signInLabel">Sign In</h5>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="mb-3">
+								<label for="user-name" class="col-form-label">
+									User Name:
+								</label>
+								<input type="text" class="form-control" id="user-name">
+							</div>
+
+							<div class="mb-3">
+								<label for="password" class="col-form-label">
+									Password:
+								</label>
+								<input type="text" class="form-control" id="password">
+							</div>
+
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 		<!-- Create Account Modal -->
+		<!-- 
+			the sign in button targets this html via the id "create"
+			all attributes in these sections are bootstrap specific for styling and javascript behavior
+		-->
 		<div
 			class="modal fade"
 			id="create"
@@ -92,21 +138,15 @@
 
 					<div class="modal-header">
 						<h5 class="modal-title" id="createLabel">Create Account</h5>
-						<button
-							type="button"
-							class="btn-close"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
 					</div>
 
 					<div class="modal-body">
 						<form>
 							<div class="mb-3">
-								<label for="name" class="col-form-label">
-									Name:
+								<label for="email" class="col-form-label">
+									Email:
 								</label>
-								<input type="text" class="form-control" id="name">
+								<input type="email" class="form-control" id="email">
 							</div>
 
 							<div class="mb-3">
@@ -127,56 +167,13 @@
 
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Submit</button>
+						<button type="submit" class="btn btn-primary">Create</button>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Sign In Modal -->
-		<div
-			class="modal fade"
-			id="signIn"
-			tabindex="-1"
-			aria-labelledby="signInLabel"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="signInLabel">Sign In</h5>
-						<button
-							type="button"
-							class="btn-close"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="mb-3">
-								<label for="user-name" class="col-form-label">
-									User Name:
-								</label>
-								<input type="text" class="form-control" id="user-name">
-							</div>
 
-							<div class="mb-3">
-								<label for="password" class="col-form-label">
-									Password:
-								</label>
-								<input type="text" class="form-control" id="password">
-							</div>
-
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Submit</button>
-					</div>
-				</div>
-			</div>
-		</div>
 
 
 		<script
